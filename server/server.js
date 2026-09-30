@@ -59,7 +59,9 @@ app.use(cors({
 }));
 
 // API Endpoints
-app.get("/", (req, res) => res.send("EngiVerse API Working on Port 5001"));
+app.get("/", (req, res) => {
+  res.send("EngiVerse API is running!");
+});
 
 app.use("/api/auth", authRouter);
 app.use("/api/user", userRouter); 
@@ -81,3 +83,5 @@ app.use('/api/marketplace', marketplaceRouter);
 server.listen(port, () =>
   console.log(`EngiVerse Server started on PORT:${port}`)
 );
+
+export default app;
