@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-//import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 // --- IMPORT LOCAL IMAGES ---
 import resumeImg from "../../assets/features/ai_resume.jpeg";
