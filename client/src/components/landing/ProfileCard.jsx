@@ -4,7 +4,7 @@ import { Github, Linkedin, Globe, Trophy, CheckCircle2, Sparkles, Code2, Graduat
 import { gsap } from "gsap";
 import ElectricBorder from "../reactbits/ElectricBorder"; 
 
-import profileImg from "../../assets/akshat_profile.png"; 
+import profileImg from "../../assets/parth_profile.png"; 
 
 // --- ⚡ PARTICLES LOGIC ---
 const GLOW_COLOR_RGB = "200, 60, 255"; 
