@@ -1,0 +1,25 @@
+<svg viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="engiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="100%" stop-color="#A855F7" />
+    </linearGradient>
+  </defs>
+  
+  <g transform="skewX(-15)">
+    <rect x="10" y="8" width="12" height="34" fill="url(#engiGradient)"/>
+    <rect x="28" y="8" width="12" height="34" fill="url(#engiGradient)"/>
+    <rect x="46" y="8" width="12" height="34" fill="url(#engiGradient)"/>
+  </g>
+  
+  <text 
+    x="75" 
+    y="35" 
+    font-family="Poppins, system-ui, sans-serif" 
+    font-size="24" 
+    font-weight="700"
+    fill="url(#engiGradient)"
+  >
+    EngiVerse
+  </text>
+</svg>

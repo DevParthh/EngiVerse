@@ -1,0 +1,85 @@
+/* Filename: client/src/components/cards/SpotlightCard.css */
+/* (Updated by your AI assistant with an animated glow background) */
+
+.card-spotlight {
+  position: relative;
+  border-radius: 1.5rem; /* 24px */
+  border: 1px solid #333;
+  background-color: #161618; /* Thoda lighter black */
+  padding: 2rem; /* 32px */
+  overflow: hidden; /* Yeh important hai */
+  transition: all 0.3s ease;
+  
+  /* CSS Variables for spotlight effect */
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+  --spotlight-color: rgba(255, 255, 255, 0.08);
+}
+
+.card-spotlight:hover {
+  border-color: #555;
+  transform: translateY(-5px) scale(1.02);
+}
+
+/* Spotlight effect on hover (pehle jaisa hi) */
+.card-spotlight::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    circle 200px at var(--mouse-x) var(--mouse-y), 
+    var(--spotlight-color), 
+    transparent 80%
+  );
+  opacity: 10;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.card-spotlight:hover::before {
+  opacity: 1;
+}
+
+/* --- YEH NAYA CODE HAI: Animated Glow Effect --- */
+.card-spotlight::after {
+  content: '';
+  position: absolute;
+  top: -50%; /* Card se bada size */
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  
+  /* Main glowing gradient */
+  background: radial-gradient(
+    circle, 
+    var(--spotlight-color) 0%, /* Spotlight ka color hi use karenge */
+    rgba(22, 22, 24, 0) 40% /* Transparent black */
+  );
+
+  /* Animation lagao */
+  animation: moving-glow 15s linear infinite;
+  pointer-events: none; /* Iske upar click ho sake */
+  opacity: 0.4; /* Glow ko subtle rakho */
+}
+
+/* Glow ko move karne ke liye animation */
+@keyframes moving-glow {
+  0% {
+    transform: translate(10%, 10%);
+  }
+  25% {
+    transform: translate(-10%, 10%);
+  }
+  50% {
+    transform: translate(-10%, -10%);
+  }
+  75% {
+    transform: translate(10%, -10%);
+  }
+  100% {
+    transform: translate(10%, 10%);
+  }
+}

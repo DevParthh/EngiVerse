@@ -1,0 +1,12 @@
+/* LiquidEther.css */
+
+.liquid-ether-container,
+.liquid-ether-container canvas {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Sabse important: Content ke peeche bhejega */
+  background-color: #000; /* Fallback color */
+}

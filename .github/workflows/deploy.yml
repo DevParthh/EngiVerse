@@ -1,0 +1,37 @@
+name: Deploy EngiVerse to AWS
+
+on:
+  push:
+    branches:
+      - main  # Jab bhi main branch par push hoga, ye chalega
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+
+    - name: Deploy to Server via SSH
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.AWS_HOST }}
+        username: ${{ secrets.AWS_USERNAME }}
+        key: ${{ secrets.AWS_SSH_KEY }}
+        port: 22
+        script: |
+          # 1. Project Folder me jao
+          cd /home/ubuntu/EngiVerse
+          
+          # 2. Naya Code Khicho
+          git pull origin main
+          
+          # 3. Server Dependencies Install karo (Fix ke saath)
+          cd server
+          npm install --legacy-peer-deps
+          
+          # 4. PM2 Restart karo (Dhyan se naam dekho)
+          pm2 restart EngiVerse-Backend
+          
+          echo "Deployment Complete! 🚀"
