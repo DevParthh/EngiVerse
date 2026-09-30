@@ -26,7 +26,7 @@ import interviewRoutes from './routes/interviewRoutes.js';
 import resumeRouter from './routes/resumeRoutes.js';
 import marketplaceRouter from './routes/marketplaceRoutes.js';
 
-// 👇 IMPORTANT: Port 5001 fix kiya hai (WordAutomate 5000 par hai)
+// 👇 IMPORTANT: Port 5001 fix kiya hai 
 const port = process.env.PORT || 5001; 
 
 connectDB();
