@@ -41,19 +41,19 @@ app.use(express.json());
 app.use(cookieParser());
 
 // 👇 Allowed Origins (Localhost + Tera Vercel App)
-// Jab tu Vercel deploy karega tab uska link yaha add karna padega
 const allowedOrigins = [
-    "http://localhost:5173",
-    "https://engi-verse-yksa.vercel.app/"  
+  "http://localhost:5173",
+  "https://engi-verse-yksa.vercel.app" // 🚨 FIX: Removed the trailing slash
 ];
 
 app.use(cors({
-  origin: [
-    "http://localhost:5173",
-    "https://engi-verse-yksa.vercel.app/" 
-  ],
+  origin: allowedOrigins,
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // FIX: Explicitly allow methods
   credentials: true // CRITICAL: This allows your JWT cookies to be sent back and forth
 }));
+
+// FIX: Explicitly handle preflight OPTIONS requests for Vercel
+app.options('*', cors());
 
 // API Endpoints
 app.get("/", (req, res) => {
