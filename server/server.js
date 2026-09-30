@@ -44,7 +44,7 @@ app.use(cookieParser());
 // Jab tu Vercel deploy karega tab uska link yaha add karna padega
 const allowedOrigins = [
     "http://localhost:5173",
-    "https://engiverse-ten.vercel.app"  
+    "https://engi-verse-yksa-lah9tobl8-ace-7b8f1.vercel.app/"  
 ];
 
 app.use(cors({ 
