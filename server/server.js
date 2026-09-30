@@ -60,9 +60,6 @@ app.use(cors({
   credentials: true
 }));
 
-// Explicitly handle preflight OPTIONS requests
-app.options('*', cors());
-
 // API Endpoints
 app.get("/", (req, res) => {
   res.send("EngiVerse API is running!");
