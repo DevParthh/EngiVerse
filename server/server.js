@@ -44,18 +44,15 @@ app.use(cookieParser());
 // Jab tu Vercel deploy karega tab uska link yaha add karna padega
 const allowedOrigins = [
     "http://localhost:5173",
-    "https://engi-verse-yksa-lah9tobl8-ace-7b8f1.vercel.app/"  
+    "https://engi-verse-yksa.vercel.app/"  
 ];
 
-app.use(cors({ 
-    origin: function (origin, callback) {
-        if (!origin || allowedOrigins.indexOf(origin) !== -1) {
-            callback(null, true);
-        } else {
-            callback(new Error('Not allowed by CORS'));
-        }
-    },
-    credentials: true 
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://engi-verse-yksa.vercel.app/" 
+  ],
+  credentials: true // CRITICAL: This allows your JWT cookies to be sent back and forth
 }));
 
 // API Endpoints
