@@ -46,13 +46,21 @@ const allowedOrigins = [
   "https://engi-verse-yksa.vercel.app" // 🚨 FIX: Removed the trailing slash
 ];
 
+// 👇 Dynamic CORS setup
 app.use(cors({
-  origin: allowedOrigins,
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // FIX: Explicitly allow methods
-  credentials: true // CRITICAL: This allows your JWT cookies to be sent back and forth
+  origin: function (origin, callback) {
+    // Allow requests with no origin (like Postman) OR localhost OR any Vercel domain
+    if (!origin || origin.startsWith("http://localhost") || origin.endsWith(".vercel.app")) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  credentials: true
 }));
 
-// FIX: Explicitly handle preflight OPTIONS requests for Vercel
+// Explicitly handle preflight OPTIONS requests
 app.options('*', cors());
 
 // API Endpoints
