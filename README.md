@@ -1,5 +1,5 @@
 <div align="center">
-<a href="https://github.com/AkshatSharma555/EngiVerse">
+<a href="https://github.com/DevParthh/EngiVerse">
 <img src="./assets/logo.png" alt="EngiVerse Logo" width="350">
 </a>
 
@@ -416,7 +416,7 @@ Use your hard-earned coins to unlock premium notes and project templates. Featur
 <p style="color: #555;">Open your terminal and run the following commands:</p>
 
 ```
-git clone https://github.com/AkshatSharma555/EngiVerse.git
+git clone https://github.com/DevParthh/EngiVerse.git
 ```
 Navigate to the directory
 ```
@@ -561,7 +561,7 @@ npm run dev
     If you found this project helpful or inspiring, please give it a star! 🌟
   </p>
 
-  <a href="https://github.com/AkshatSharma555/EngiVerse/stargazers">
+  <a href="https://github.com/DevParthh/EngiVerse/stargazers">
     <img src="https://img.shields.io/badge/⭐_Star_This_Repository-FFD700?style=for-the-badge&logo=github&logoColor=black&labelColor=FFFacd" height="45" alt="Star Repo" />
   </a>
 </div>
@@ -570,21 +570,21 @@ npm run dev
 <br />
 
 <div align="center">
-  <h3 style="color: #1F2933;">👨‍💻 Built with ❤️ by Akshat Sharma</h3>
+  <h3 style="color: #1F2933;">👨‍💻 Built with ❤️ by Parth Thakur</h3>
   <p style="color: #555; font-size: 15px; margin-bottom: 20px;">
     Full Stack Developer | AI Enthusiast | Builder
   </p>
 
   <p>
-    <a href="https://www.linkedin.com/in/akshat-sharma-633008291/">
+    <a href="https://www.linkedin.com/in/parth-thakur-3250592a6/">
       <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" height="30" />
     </a>
     &nbsp;&nbsp;
-    <a href="https://github.com/AkshatSharma555">
+    <a href="https://github.com/DevParthh">
       <img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white" height="30" />
     </a>
     &nbsp;&nbsp;
-    <a href="mailto:s.akshat340@gmail.com">
+    <a href="mailto:parththakur442@gmail.com">
       <img src="https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" height="30" />
     </a>
   </p>

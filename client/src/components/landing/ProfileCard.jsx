@@ -124,7 +124,7 @@ export default function ProfileCard() {
                         </div>
                         <div className="text-center px-4 pb-4 pt-1 flex-grow flex flex-col">
                             <h2 className="text-white font-bold text-base flex items-center justify-center gap-1.5">
-                                Akshat Sharma <CheckCircle2 className="w-4 h-4 text-blue-500 fill-blue-500/10" />
+                                Parth Thakur <CheckCircle2 className="w-4 h-4 text-blue-500 fill-blue-500/10" />
                             </h2>
                             <p className="text-slate-400 text-[11px] font-medium mt-0.5">SIES Graduate School of Technology</p>
                             <p className="text-slate-500 text-[10px] uppercase tracking-widest mt-1 mb-4 font-mono font-bold">IT • Class of 2027</p>
@@ -191,7 +191,7 @@ export default function ProfileCard() {
                             </div>
                             <div className="grid grid-cols-2 gap-y-4 gap-x-4">
                                 {[
-                                    { label: "Email", val: "s.akshat340@gmail.com" },
+                                    { label: "Email", val: "parththakur442@gmail.com" },
                                     { label: "College", val: "SIES Graduate School" },
                                     { label: "Branch", val: "Information Technology" },
                                     { label: "Graduation", val: "2027", isBadge: true }

@@ -35,12 +35,6 @@ const cardsData = [
         content: "The whiteboard collaboration tool is buttery smooth. We built our entire final year project architecture here."
     },
     {
-        name: 'Parth Thakur',
-        handle: '@parth_stack',
-        date: '1 day ago',
-        content: "Finally, a platform that understands engineers. No clutter, just tools that actually help us grow."
-    },
-    {
         name: 'Ajinkya Deshmukh',
         handle: '@aj_codes',
         date: '4 days ago',

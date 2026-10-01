@@ -67,7 +67,7 @@ export default function AboutSection() {
 
                     <div className="mt-8 pt-6 border-t border-white/10 flex items-center gap-4">
                         <div>
-                            <p className="text-white font-bold text-lg font-handwriting">Akshat Sharma</p>
+                            <p className="text-white font-bold text-lg font-handwriting">Parth Thakur</p>
                             <p className="text-slate-500 text-xs tracking-widest uppercase mt-0.5">Founder, EngiVerse</p>
                         </div>
                     </div>

@@ -111,7 +111,7 @@ const PersonalInfoForm = ({ data, onChange, removeBackground, setRemoveBackgroun
                   name="full_name"
                   value={data.full_name || ""}
                   onChange={handleChange}
-                  placeholder="e.g. Akshat Sharma"
+                  placeholder="e.g. Parth Thakur"
                   className="w-full px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-lg focus:bg-white focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 outline-none text-gray-900 font-medium placeholder:text-gray-400 transition-all"
               />
           </div>
@@ -137,7 +137,7 @@ const PersonalInfoForm = ({ data, onChange, removeBackground, setRemoveBackgroun
                   name="email"
                   value={data.email || ""}
                   onChange={handleChange}
-                  placeholder="e.g. akshat@example.com"
+                  placeholder="e.g. parth@example.com"
                   className="w-full px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-lg focus:bg-white focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 outline-none text-gray-900 placeholder:text-gray-400 transition-all"
               />
           </div>
@@ -189,7 +189,7 @@ const PersonalInfoForm = ({ data, onChange, removeBackground, setRemoveBackgroun
                   name="linkedin"
                   value={data.linkedin || ""}
                   onChange={handleChange}
-                  placeholder="e.g. linkedin.com/in/akshat"
+                  placeholder="e.g. linkedin.com/in/parth"
                   className="w-full px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-lg focus:bg-white focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 outline-none text-gray-900 placeholder:text-gray-400 transition-all"
               />
           </div>
