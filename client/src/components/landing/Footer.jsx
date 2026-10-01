@@ -84,7 +84,7 @@ export default function Footer() {
 
                     {/* THE SIGNATURE PILL */}
                     <motion.a 
-                        href="https://www.linkedin.com/in/akshat-sharma-6664422b3/"
+                        href="https://www.linkedin.com/in/parth-thakur-3250592a6/"
                         target="_blank"
                         rel="noreferrer"
                         whileHover={{ scale: 1.02 }}
@@ -94,7 +94,7 @@ export default function Footer() {
                         <span className="text-slate-400 group-hover:text-slate-300 transition-colors text-xs uppercase tracking-wider font-semibold">Crafted by</span>
                         <div className="h-4 w-[1px] bg-white/10 group-hover:bg-indigo-500/30 transition-colors" />
                         <span className="font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                            Akshat Sharma
+                            Parth Thakur
                         </span>
                         <Heart className="w-3.5 h-3.5 text-red-500 fill-red-500 animate-pulse ml-0.5" />
                     </motion.a>

@@ -90,7 +90,7 @@ export default function ContactSection() {
     const [copied, setCopied] = useState(false);
 
     const handleCopyEmail = () => {
-        navigator.clipboard.writeText("s.akshat340@gmail.com");
+        navigator.clipboard.writeText("parththakur442@gmail.com");
         setCopied(true);
         setTimeout(() => setCopied(false), 2000);
     };
@@ -120,7 +120,7 @@ export default function ContactSection() {
                                     </div>
                                     <span className="text-indigo-400 font-bold text-xs uppercase tracking-wider">Email Me</span>
                                 </div>
-                                <h3 className="text-lg md:text-xl font-bold text-white mb-4 break-all">s.akshat340@gmail.com</h3>
+                                <h3 className="text-lg md:text-xl font-bold text-white mb-4 break-all">parththakur442@gmail.com</h3>
                                 <button onClick={handleCopyEmail} className="flex items-center gap-2 px-4 py-1.5 bg-white/5 border border-white/10 text-white rounded-lg text-xs font-medium hover:bg-white/10 active:scale-95 transition-all">
                                     {copied ? <Check className="w-3 h-3 text-green-400" /> : <Copy className="w-3 h-3" />}
                                     {copied ? "Copied" : "Copy"}
@@ -130,12 +130,12 @@ export default function ContactSection() {
                     </div>
 
                     {/* 2. LINKEDIN & GITHUB */}
-                    <SocialTile icon={Linkedin} title="LinkedIn" link="https://www.linkedin.com/in/akshat-sharma-6664422b3" />
-                    <SocialTile icon={Github} title="GitHub" link="https://github.com/AkshatSharma555" />
+                    <SocialTile icon={Linkedin} title="LinkedIn" link="https://www.linkedin.com/in/parth-thakur-3250592a6/" />
+                    <SocialTile icon={Github} title="GitHub" link="https://github.com/DevParthh" />
                     
                     {/* 3. ROW 2 */}
-                    <SocialTile icon={Code2} title="LeetCode" link="https://leetcode.com/u/Akshat_Sharma_518/" />
-                    <SocialTile icon={Instagram} title="Instagram" link="https://www.instagram.com/akshat_518s/" />
+                    <SocialTile icon={Code2} title="LeetCode" link="https://leetcode.com/u/XT_WIZARD/" />
+                    <SocialTile icon={Instagram} title="Instagram" link="/" />
                     
                     {/* PHONE (Spans 2) */}
                     <div className="col-span-2">
@@ -149,7 +149,7 @@ export default function ContactSection() {
                                             </div>
                                             <span className="text-emerald-400 font-bold text-xs uppercase tracking-wider">Call Me</span>
                                         </div>
-                                        <p className="text-xl font-bold text-white mt-1">+91 87664 15768</p>
+                                        <p className="text-xl font-bold text-white mt-1">+91 93700 65454</p>
                                     </div>
                                     <div className="p-3 bg-white/5 rounded-full group-hover:scale-110 transition-transform">
                                         <ArrowUpRight className="w-5 h-5 text-slate-400 group-hover:text-emerald-400" />
@@ -161,12 +161,12 @@ export default function ContactSection() {
 
                     {/* 4. ROW 3: YOUTUBE (1 Col) + CTA (3 Cols) */}
                     <div className="col-span-2 md:col-span-1">
-                        <SocialTile icon={Youtube} title="YouTube" link="https://www.youtube.com/@Akshat_sharma." />
+                        <SocialTile icon={Youtube} title="YouTube" link="/" />
                     </div>
 
                     {/* --- NEW GITHUB CTA (Fills the remaining 3 columns) --- */}
                     <div className="col-span-2 md:col-span-3">
-                        <a href="https://github.com/AkshatSharma555/EngiVerse-App" target="_blank" rel="noopener noreferrer" className="block h-full">
+                        <a href="https://github.com/DevParthh/EngiVerse" target="_blank" rel="noopener noreferrer" className="block h-full">
                             <MagicCard className="rounded-xl h-full border-indigo-500/20 hover:border-indigo-500/50 group">
                                 <div className="p-6 h-full flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden">
                                     
@@ -183,7 +183,7 @@ export default function ContactSection() {
                                         </p>
                                         <div className="flex items-center justify-center md:justify-start gap-2 mt-2 text-xs font-medium text-slate-500">
                                             <span className="w-1.5 h-1.5 rounded-full bg-indigo-500 animate-pulse"></span>
-                                            <span>Open Source Project by <span className="text-slate-300">Akshat Sharma</span></span>
+                                            <span>Open Source Project by <span className="text-slate-300">Parth Thakur</span></span>
                                         </div>
                                     </div>
 
