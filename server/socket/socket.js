@@ -7,14 +7,14 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
     cors: {
-        origin: ["http://localhost:5173", "http://localhost:5174", "https://engiverse-chi.vercel.app"],
+        origin: ["http://localhost:5173", "http://localhost:5174", "https://engi-verse-two.vercel.app"],
         methods: ["GET", "POST"],
         credentials: true
     },
 });
 
 // Map to store { userId: socketId }
-const userSocketMap = {}; 
+const userSocketMap = {};
 
 export const getReceiverSocketId = (receiverId) => {
     return userSocketMap[receiverId];
@@ -22,7 +22,7 @@ export const getReceiverSocketId = (receiverId) => {
 
 io.on("connection", (socket) => {
     const userId = socket.handshake.query.userId;
-    
+
     if (userId && userId !== "undefined") {
         userSocketMap[userId] = socket.id;
         console.log(`User connected: ${userId}`); // Debug log

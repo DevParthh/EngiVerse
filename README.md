@@ -9,12 +9,8 @@ The first ecosystem where engineers don't just learn—they build, earn, and get
 </p>
 
 <p align="center">
-<a href="https://engiverse-ten.vercel.app/">
+<a href="https://engiverse-two.vercel.app/">
 <img src="https://img.shields.io/badge/🚀_Launch-Live_App-2ea44f?style=for-the-badge&logoColor=white" height="35" />
-</a>
-&nbsp;&nbsp;
-<a href="https://youtu.be/29wNNnYij68?si=5Sz7KttXFmgImaff">
-<img src="https://img.shields.io/badge/🎥_Watch-Demo_Video-FF0000?style=for-the-badge&logo=youtube&logoColor=white" height="35" />
 </a>
 &nbsp;&nbsp;
 </p>
